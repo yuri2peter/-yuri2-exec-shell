@@ -1,8 +1,8 @@
-import fs from "fs-extra";
 import path from "path";
 import { spawn } from "child_process";
 import { Readable } from "stream";
-import { v4 as uuidv4 } from "uuid";
+const { v4: uuidv4 } = require("uuid");
+const fs = require("fs-extra");
 
 const dirPathScripts = path.join(__dirname, "scripts");
 

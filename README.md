@@ -10,7 +10,14 @@
 ## 使用
 
 ```ts
+import { execShellScriptContent } from "@yuri2/exec-shell";
 
+async function main() {
+  const results = await execShellScriptContent(`echo hello`);
+  console.log(results);
+}
+
+main();
 ```
 
 ## 开发
@@ -32,6 +39,22 @@ npm install axios --save-dev
 ### 打包编译
 
 - `npm run build` 生成 index.ts 文件和.d.ts 声明文件
+
+### 发布前测试
+
+1. 全局测试：把包链接到全局环境
+   ` npm link`
+
+2. 本地项目测试：把包链接到项目本地环境
+   `cd 本地项目根目录`
+   `npm link 包名`
+
+3. 取消本地项目测试：把包从本地环境取消
+   `cd 本地项目根目录`
+   `npm unlink 包名`
+
+4. 取消全局测试：把包从全局环境中取消
+   `npm unlink 包名`
 
 ### npm 发布
 

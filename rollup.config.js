@@ -8,8 +8,11 @@ export default {
   output: {
     // 打包出口
     file: "dist/index.js",
-    format: "umd", // umd是兼容amd/cjs/iife的通用打包格式，适合浏览器
-    name: "utilibs",
+    // umd: 兼容amd/cjs/iife的通用打包格式，适合浏览器
+    // esm：ES6 Module
+    // cjs nodejs标准
+    format: "cjs",
+    name: "ExecShell",
     sourcemap: true,
   },
   plugins: [
