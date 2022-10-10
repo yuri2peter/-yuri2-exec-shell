@@ -30,7 +30,10 @@ main();
 
 ### 打包编译
 
-- `npm run build` 生成 index.ts 文件和.d.ts 声明文件
+```
+按需求，修改rollup.config.js文件
+npm run build 生成index.ts文件和.d.ts声明文件
+```
 
 ### 发布前测试
 
