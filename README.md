@@ -62,7 +62,7 @@ npm install axios --save-dev
 
 - 修改版本号
 - 提交 github
-  `npm publish`
+  `npm publish --access public`
 
 更新版本：
 `npm run release`
