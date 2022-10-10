@@ -22,14 +22,6 @@ main();
 
 ## 开发
 
-### 依赖包
-
-注意使用 dev 依赖，例如：
-
-```
-npm install axios --save-dev
-```
-
 ### 源码编写
 
 - `src` 目录下编写源码
