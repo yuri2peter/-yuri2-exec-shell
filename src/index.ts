@@ -1,3 +1,3 @@
-import srctest from "./srctest";
+import execShellScriptContent from "./execShellScriptContent";
 
-export { srctest };
+export { execShellScriptContent };
