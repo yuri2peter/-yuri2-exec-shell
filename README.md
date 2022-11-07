@@ -13,8 +13,11 @@
 import { execShellScriptContent } from "@yuri2/exec-shell";
 
 async function main() {
-  const results = await execShellScriptContent(`echo hello`);
-  console.log(results);
+  const results1 = await execShellScriptContent(`echo hello`);
+  console.log(results1);
+
+  const results2 = await execShellScriptFile(__dirname + "/test.sh");
+  console.log(results2);
 }
 
 main();
