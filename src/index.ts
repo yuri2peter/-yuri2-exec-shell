@@ -1,3 +1,6 @@
-import execShellScriptContent from "./execShellScriptContent";
+import {
+  execShellScriptContent,
+  execShellScriptFile,
+} from "./execShellScriptContent";
 
-export { execShellScriptContent };
+export { execShellScriptContent, execShellScriptFile };
